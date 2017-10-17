@@ -6,19 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     {{!-- Page Meta --}}
-    {{!--<title>{{meta_title</title>--}}
 		<title>
-{{#if post.title}}
+    {{#if post.title}}
       {{@blog.title}} | {{post.title}}
-{{else if tag.name}}
+    {{else if tag.name}}
 			{{@blog.title}} | {{tag.name}}
-{{else if author.name}}
+    {{else if author.name}}
       {{@blog.title}} | {{author.name}}
-{{else}}
+    {{else}}
 			{{@blog.title}}
-{{/if}}
+    {{/if}}
 		</title>
-    <meta name="description" content="{{meta_description}}" />
 
     {{!-- Mobile Meta --}}
     <meta name="HandheldFriendly" content="True" />
