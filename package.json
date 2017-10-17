@@ -6,6 +6,7 @@
 	"license": "MIT",
 	"author": {
 		"name": "Ian Paschal",
+		"email": "ian.paschal@gmail.com",
 		"url": "https://github.com/ianpaschal"
 	},
 	"keywords": [
@@ -16,5 +17,8 @@
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/ianpaschal/revenant.git"
+	},
+	"config": {
+		"posts_per_page": 5
 	}
 }
