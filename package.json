@@ -18,5 +18,8 @@
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/ianpaschal/revenant.git"
+	},
+	"config": {
+		"posts_per_page": 5
 	}
 }
