@@ -9,13 +9,13 @@
     {{!--<title>{{meta_title</title>--}}
     <title>
 {{#if post.title}}
-      {{@blog.title}} | {{post.title}}
+      {{@site.title}} | {{post.title}}
 {{else if tag.name}}
-      {{@blog.title}} | {{tag.name}}
+      {{@site.title}} | {{tag.name}}
 {{else if primary_author.name}}
-      {{@blog.title}} | {{primary_author.name}}
+      {{@site.title}} | {{primary_author.name}}
 {{else}}
-      {{@blog.title}}
+      {{@site.title}}
 {{/if}}
     </title>
 
@@ -45,19 +45,19 @@
         {{!-- HEADER --}}
 {{#if @blog.logo}}
         <div class="sidebar-section logo-header" id="site-header">
-          <a href="{{@blog.url}}">
-            <img class="blog-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+          <a href="{{@site.url}}">
+            <img class="blog-logo" src="{{@site.logo}}" alt="{{@site.title}}" />
 {{else}}
         <div class="sidebar-section text-header" id="site-header">
-          <a href="{{@blog.url}}">
-            <h1 class="blog-title">{{@blog.title}}</h1>
+          <a href="{{@site.url}}">
+            <h1 class="blog-title">{{@site.title}}</h1>
 {{/if}}
           </a>
         </div>
 
         {{!-- DESCRIPTION --}}
         <div class="sidebar-section" id="site-description">
-          <p>{{@blog.description}}</p>
+          <p>{{@site.description}}</p>
         </div>
 
         <div class="sidebar-section" id="site-navigation">
@@ -65,7 +65,7 @@
         </div>
 
         <div class="sidebar-section" id="site-footer">
-          <p id="copyright">&copy;{{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a></p>
+          <p id="copyright">&copy;{{date format="YYYY"}} <a href="{{@site.url}}">{{@site.title}}</a></p>
           <p id="theme-credit">
             <a href="https://github.com/ianpaschal/revenant">Revenant Theme</a> for <a href="https://ghost.org">Ghost</a>
           </p>
