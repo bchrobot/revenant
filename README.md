@@ -1,16 +1,10 @@
 # Revenant Theme
 
-Revenant is a bare-bones, clean, and simple Ghost theme.
-
+[![Ghost v2.x](https://img.shields.io/badge/ghost-v2.x-brightgreen)]()
+[![Github All Releases](https://img.shields.io/github/downloads/bchrobot/revenant/total.svg)]()
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
-[![Github All Releases](https://img.shields.io/github/downloads/ianpaschal/revenant/total.svg)]()
-[![label](https://img.shields.io/github/issues-raw/badges/shields/website.svg)]()
 
-## Demo
-
-Coming soon!
-
-[## Download](https://github.com/ianpaschal/revenant/releases)
+Revenant is a bare-bones, clean, and simple [Ghost](http://github.com/tryghost/ghost/) theme. If you're just looking to download the latest release, head over to the [releases](https://github.com/bchrobot/revenant/releases) page.
 
 ## Features
 
@@ -26,6 +20,15 @@ Coming soon!
 - Support for embedded videos
 - Support for mobile
 
+## Authors
+
+- **Ian Paschal** - _[Initial work](https://github.com/ianpaschal/revenant)_ - [ianpaschal](https://github.com/ianpaschal)
+- **Benjamin Chrobot** - _Upkeep_ - [bchrobot](https://github.com/bchrobot)
+
+See also the list of [contributors][contributors] who participated in this project.
+
 ## Copyright & License
 
-Copyright (c) 2017 Ian Paschal - Released under the [MIT license](LICENSE).
+Copyright (c) 2019 Benjamin Chrobot - Released under the [MIT license](LICENSE).
+
+[contributors]: https://github.com/bchrobot/revenant/contributors

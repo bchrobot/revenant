@@ -1,12 +1,12 @@
 {
   "name": "revenant",
   "description": "Revenant is a bare-bones, clean, and simple Ghost theme.",
-  "homepage": "https://github.com/ianpaschal/revenant",
+  "homepage": "https://github.com/bchrobot/revenant",
   "version": "1.1.0",
   "license": "MIT",
   "author": {
-    "name": "Ian Paschal",
-    "url": "https://github.com/ianpaschal",
+    "name": "Benjamin Chrobot",
+    "url": "https://github.com/bchrobot",
     "email": "benjamin.blair.chrobot@gmail.com"
   },
   "keywords": [
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/ianpaschal/revenant.git"
+    "url": "git://github.com/bchrobot/revenant.git"
   },
   "config": {
     "posts_per_page": 5
