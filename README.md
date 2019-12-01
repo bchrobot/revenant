@@ -1,6 +1,6 @@
 # Revenant Theme
 
-[![Ghost v2.x](https://img.shields.io/badge/ghost-v2.x-brightgreen)]()
+[![Ghost v3.x](https://img.shields.io/badge/ghost-v3.x-brightgreen)]()
 [![Github All Releases](https://img.shields.io/github/downloads/bchrobot/revenant/total.svg)]()
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
