@@ -3,10 +3,10 @@
 {{#post}}
 	<div class="post-full">
 
-		{{! image }}
-{{#if image}}
+		{{! feature_image }}
+{{#if feature_image}}
 		<a href="{{url}}">
-			<div class="post-image" style="background-image: url({{image}})"></div>
+			<div class="post-image" style="background-image: url({{img_url}})"></div>
 		</a>
 		<div class="post-body">
 {{else}}
@@ -14,7 +14,7 @@
 {{/if}}
 			<h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
 			<p class="post-author">
-				{{author}} on
+				{{primary_author.name}} on
 				<time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
 					{{date format="DD MMMM YYYY"}}
 				</time>

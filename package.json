@@ -6,15 +6,20 @@
 	"license": "MIT",
 	"author": {
 		"name": "Ian Paschal",
-		"url": "https://github.com/ianpaschal"
+		"url": "https://github.com/ianpaschal",
+		"email": "benjamin.blair.chrobot@gmail.com"
 	},
 	"keywords": [
 		"ghost",
 		"theme",
+		"ghost-theme",
 		"revenant"
 	],
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/ianpaschal/revenant.git"
+	},
+	"config": {
+		"posts_per_page": 5
 	}
 }

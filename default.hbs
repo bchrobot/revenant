@@ -12,13 +12,12 @@
       {{@blog.title}} | {{post.title}}
 {{else if tag.name}}
 			{{@blog.title}} | {{tag.name}}
-{{else if author.name}}
-      {{@blog.title}} | {{author.name}}
+{{else if primary_author.name}}
+      {{@blog.title}} | {{primary_author.name}}
 {{else}}
 			{{@blog.title}}
 {{/if}}
 		</title>
-    <meta name="description" content="{{meta_description}}" />
 
     {{!-- Mobile Meta --}}
     <meta name="HandheldFriendly" content="True" />
