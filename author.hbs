@@ -1,43 +1,40 @@
 {{!< default}}
 {{#author}}
 
+  <div class="author-tile">
 
-	<div class="author-tile">
+    {{#if profile_image}}
+      <div class="author-image" style="background-image: url({{img_url}})"></div>
+    {{/if}}
 
-		{{#if profile_image}}
-			<div class="author-image" style="background-image: url({{img_url}})"></div>
-		{{/if}}
-
-
-
-		<div class="author-info">
-			<h1 class="author-name">
-				{{name}}
-			</h1>
-			{{#if location}}
-				<p class="author-location icon-location">
-					{{location}}
-				</p>
-			{{/if}}
-			{{#if website}}
-				<p class="author-link icon-link">
-					<a href="{{website}}">
-						{{website}}
-					</a>
-				</p>
-			{{/if}}
-			<p class="author-stats">
-				{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
-			</p>
-		</div>
+    <div class="author-info">
+      <h1 class="author-name">
+        {{name}}
+      </h1>
+      {{#if location}}
+        <p class="author-location icon-location">
+          {{location}}
+        </p>
+      {{/if}}
+      {{#if website}}
+        <p class="author-link icon-link">
+          <a href="{{website}}">
+            {{website}}
+          </a>
+        </p>
+      {{/if}}
+      <p class="author-stats">
+        {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+      </p>
+    </div>
 {{#if bio}}
-		<div class="author-bio">
-			<p>
-				{{bio}}
-			</p>
-		</div>
+    <div class="author-bio">
+      <p>
+        {{bio}}
+      </p>
+    </div>
 {{/if}}
-	</div>
+  </div>
 {{/author}}
 
 {{!-- The tag below includes the post loop - partials/loop.hbs --}}

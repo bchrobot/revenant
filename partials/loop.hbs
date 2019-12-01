@@ -1,44 +1,48 @@
-{{!-- Previous/next page links - only displayed on page 2+ --}}
+{{! Previous/next page links - only displayed on page 2+ }}
 <!-- <div class="extra-pagination inner">
-		{{pagination}}
+    {{pagination}}
 </div>-->
-
 {{#foreach posts}}
-<div class="post-tile">
-
-	{{! feature_image }}
-	{{#if feature_image}}
-	<a href="{{url}}">
-		<div class="post-image" style="background-image: url({{img_url}})"></div>
-	</a>
-	{{/if}}
-	<div class="post-body">
-		<h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
-		<p class="post-author">
-			{{primary_author.name}} on
-			<time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
-				{{date format="DD MMMM YYYY"}}
-			</time>
-		</p>
-
-		<p class="post-excerpt">
-			{{excerpt words="32"}}&hellip; <a class="read-more" href="{{url}}"> Read more &raquo;</a>
-		</p>
-
-		{{#if tags}}
-	    <div class="post-tags">
-		    {{#foreach tags}}
-	        <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">
-						{{name}}
-					</a>
-		    {{/foreach}}
-			</div>
-	  {{/if}}
-	</div>
-</div>
+  <div class="post-tile">
+    {{! feature_image }}
+    {{#if feature_image}}
+      <a href="{{url}}">
+        <div class="post-image" style="background-image: url({{img_url}})"></div>
+      </a>
+    {{/if}}
+    <div class="post-body">
+      <h1 class="post-title">
+        <a href="{{url}}">
+          {{title}}
+        </a>
+      </h1>
+      <p class="post-author">
+        {{primary_author.name}}
+        on
+        <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
+          {{date format="DD MMMM YYYY"}}
+        </time>
+      </p>
+      <p class="post-excerpt">
+        {{excerpt words="32"}}
+        …
+        <a class="read-more" href="{{url}}">
+          Read more »
+        </a>
+      </p>
+      {{#if tags}}
+        <div class="post-tags">
+          {{#foreach tags}}
+            <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">
+              {{name}}
+            </a>
+          {{/foreach}}
+        </div>
+      {{/if}}
+    </div>
+  </div>
 {{/foreach}}
-
-{{!-- Previous/next page links - displayed on every page --}}
+{{! Previous/next page links - displayed on every page }}
 <div class="pagination">
-	{{pagination}}
+  {{pagination}}
 </div>
